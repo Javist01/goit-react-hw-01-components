@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import {Table, Head, Row, HeadCell, Body, BodyCell} from './TransactionHistory.module'
+import {Table, Head, Row, HeadCell, Body, BodyCell} from './TransactionHistory.styles'
 
 export function TransactionHistory ({items}) {
     return(

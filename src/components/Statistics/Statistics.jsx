@@ -9,7 +9,7 @@ import {
     Item,
     Label,
     Percentage
-} from './Statistics.module'
+} from './Statistics.styles'
 
 
 function getRandomHexColor() {

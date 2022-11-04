@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { List, Item, Status, Avatar, Name} from './FriendList.module'
+import { List, Item, Status, Avatar, Name } from './FriendList.styles'
 
 export function FriendList ({friends}) {
     return(

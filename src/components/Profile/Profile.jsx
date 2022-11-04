@@ -3,7 +3,7 @@ import CSS from './Profile.module.css';
 
 
 
-export const Profile = ({username, tag, location, avatar, stats}) =>{
+export const Profile = ({username, tag, location, avatar, stats: {followers, views, likes}}) =>{
     return (
 <div className={CSS.profile}>
   <div className={CSS.description}>
@@ -20,15 +20,15 @@ export const Profile = ({username, tag, location, avatar, stats}) =>{
   <ul className={CSS.stats}>
     <li>
       <span className={CSS.label}>Followers</span>
-      <span className={CSS.quantity}>{stats.followers}</span>
+      <span className={CSS.quantity}>{followers}</span>
     </li>
     <li>
       <span className={CSS.label}>Views</span>
-      <span className={CSS.quantity}>{stats.views}</span>
+      <span className={CSS.quantity}>{views}</span>
     </li>
     <li>
       <span className={CSS.label}>Likes</span>
-      <span className={CSS.quantity}>{stats.likes}</span>
+      <span className={CSS.quantity}>{likes}</span>
     </li>
   </ul>
 </div>
@@ -36,7 +36,7 @@ export const Profile = ({username, tag, location, avatar, stats}) =>{
 }
 
 Profile.propTypes = {
-    username: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
